@@ -17,8 +17,9 @@
         main {
             flex-direction: column;
             gap: 20px;
-            height: fit-content;
+            height: max-content;
             padding: 0px 10px 30px 10px;
+            margin-bottom: 20px;
 
             .profile {
                 width: 90vw;
