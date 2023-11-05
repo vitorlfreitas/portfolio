@@ -1,0 +1,50 @@
+@import '../abstract/variable';
+
+@media all and (min-width: 1500px) {
+    body {
+        header {
+            figure {
+                img {
+                    margin-top: 5px;
+                    height: 80px;
+                }
+            }
+
+            nav {
+                ul {
+                    li a {
+                        font-size: $text-size * 2.4;
+                    }
+                }
+            }
+
+        }
+
+        main {
+            gap: 100px;
+            .profile {
+                h1 {
+                    font-size: $text-size * 3.5;
+                    word-spacing: 0.6rem;
+                }
+
+                p {
+                    font-size: $text-size * 1.8;
+                }
+
+                .buttons {
+
+                    a {
+                        font-size: $text-size * 1.6;
+                    }
+                }
+            }
+
+            figure {
+                img {
+                    width: 540px;
+                }
+            }
+        }
+    }
+}

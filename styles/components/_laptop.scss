@@ -1,0 +1,64 @@
+@import '../abstract/variable';
+
+@media all and (max-width: 1160px) {
+    body {
+        main {
+            gap: 80px;
+
+            .profile {
+                h1 {
+                    font-size: $text-size * 1.6;
+                    word-spacing: 0.6rem;
+                }
+
+                p {
+                    font-size: $text-size * 1.4;
+                }
+
+                .buttons {
+
+                    a {
+                        font-size: $text-size * 1.1;
+                    }
+                }
+            }
+
+            figure {
+                img {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1070px) {
+    body {
+        main {
+            .profile {
+                h1 {
+                    font-size: $text-size * 1.8;
+                    word-spacing: 0.6rem;
+                }
+
+                p {
+                    font-size: $text-size * 1.5;
+                }
+
+                .buttons {
+
+                    a {
+                        width: 35%;
+                        font-size: $text-size * 1.1;
+                    }
+                }
+            }
+
+            figure {
+                img {
+                    width: 320px;
+                }
+            }
+        }
+    }
+}

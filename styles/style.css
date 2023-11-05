@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+  color: #f6f6f6;
+}
+
+html, body {
+  font-family: "Montserrat";
+  background-color: #000;
+  color: #f6f6f6;
+  font-size: 1rem;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+@media all and (min-width: 1500px) {
+  body header figure img {
+    margin-top: 5px;
+    height: 80px;
+  }
+  body header nav ul li a {
+    font-size: 2.4rem;
+  }
+  body main {
+    gap: 100px;
+  }
+  body main .profile h1 {
+    font-size: 3.5rem;
+    word-spacing: 0.6rem;
+  }
+  body main .profile p {
+    font-size: 1.8rem;
+  }
+  body main .profile .buttons a {
+    font-size: 1.6rem;
+  }
+  body main figure img {
+    width: 540px;
+  }
+}
+body header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 6%;
+}
+body header figure img {
+  margin-top: 5px;
+  height: 60px;
+}
+body header nav ul {
+  display: flex;
+  gap: 4vw;
+}
+body header nav ul li a {
+  font-size: 1.8rem;
+}
+body header nav ul li a:hover {
+  transition-duration: 0.4s;
+  color: #22D4FD;
+}
+body main {
+  height: 90vh;
+  padding: 0 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+body main .profile {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body main .profile h1 {
+  font-family: "Krona One";
+  font-size: 2.2rem;
+  word-spacing: 0.4rem;
+}
+body main .profile h1 strong {
+  color: #22D4FD;
+}
+body main .profile p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: normal;
+  text-align: justify;
+}
+body main .profile .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+body main .profile .buttons a {
+  text-align: center;
+  background: #22D4FD;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 30%;
+  padding: 10px;
+  border-radius: 16px;
+}
+body main .profile .buttons a:hover {
+  transform: scale(1.05, 1.05);
+  transition-duration: 0.125s;
+}
+body main figure {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+body main figure img {
+  width: 420px;
+}
+
+@media all and (max-width: 1160px) {
+  body main {
+    gap: 80px;
+  }
+  body main .profile h1 {
+    font-size: 1.6rem;
+    word-spacing: 0.6rem;
+  }
+  body main .profile p {
+    font-size: 1.4rem;
+  }
+  body main .profile .buttons a {
+    font-size: 1.1rem;
+  }
+  body main figure img {
+    width: 300px;
+  }
+}
+@media all and (max-width: 1070px) {
+  body main .profile h1 {
+    font-size: 1.8rem;
+    word-spacing: 0.6rem;
+  }
+  body main .profile p {
+    font-size: 1.5rem;
+  }
+  body main .profile .buttons a {
+    width: 35%;
+    font-size: 1.1rem;
+  }
+  body main figure img {
+    width: 320px;
+  }
+}
+@media all and (max-width: 920px) {
+  body header figure img {
+    height: 40px;
+  }
+  body header nav ul li a {
+    font-size: 1.2rem;
+  }
+  body main {
+    gap: 55px;
+  }
+  body main .profile h1 {
+    font-size: 1.6rem;
+    word-spacing: 0.2rem;
+    margin-bottom: 0px;
+  }
+  body main .profile p {
+    font-size: 1.2rem;
+  }
+  body main figure img {
+    width: 300px;
+  }
+}
+@media all and (max-width: 760px) {
+  body header figure img {
+    height: 40px;
+  }
+  body header nav ul li {
+    font-size: 1.2rem;
+  }
+  body main {
+    gap: 45px;
+  }
+  body main .profile h1 {
+    font-size: 1.35rem;
+    word-spacing: 0.1rem;
+  }
+  body main .profile p {
+    font-size: 1.125rem;
+  }
+  body main .profile .buttons {
+    justify-content: space-between;
+    margin: 0 15px;
+  }
+  body main .profile .buttons a {
+    width: 45%;
+    font-size: 1rem;
+  }
+  body main figure img {
+    width: 240px;
+  }
+}
+@media all and (max-width: 630px) {
+  body main .profile .buttons a {
+    font-size: 0.9rem;
+  }
+}
+@media all and (max-width: 620px) {
+  body main {
+    flex-direction: column;
+    gap: 20px;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0px 10px 30px 10px;
+  }
+  body main .profile {
+    width: 90vw;
+  }
+  body main .profile h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    word-spacing: 0.2rem;
+  }
+  body main figure {
+    order: -1;
+  }
+  body main figure img {
+    width: 300px;
+  }
+}
+@media all and (max-width: 430px) {
+  body header figure img {
+    height: 35px;
+  }
+  body header nav ul li a {
+    font-size: 1rem;
+  }
+  body main .profile h1 {
+    font-size: 1.5rem;
+  }
+  body main figure img {
+    width: 260px;
+  }
+}
+@media all and (max-width: 330px) {
+  body header {
+    padding: 10px 3%;
+  }
+  body header figure img {
+    height: 30px;
+  }
+  body header nav ul {
+    gap: 2.5vw;
+  }
+  body main .profile h1 {
+    font-size: 1.3rem;
+  }
+  body main .profile p {
+    font-size: 1rem;
+  }
+  body main .profile .buttons a {
+    font-size: 0.8rem;
+  }
+  body main figure img {
+    width: 220px;
+  }
+}
+@media all and (max-width: 285px) {
+  body header {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  body header nav ul {
+    gap: 6vw;
+  }
+}/*# sourceMappingURL=style.css.map */

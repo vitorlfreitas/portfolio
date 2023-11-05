@@ -1,0 +1,12 @@
+// Fonts Google
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap');
+
+// Import scss files
+@import '../styles/abstract/variable';
+@import '../styles/abstract/base';
+
+@import '../styles/components/large-screen';
+@import '../styles/components/index';
+@import '../styles/components/laptop';
+@import '../styles/components/tablet';
+@import '../styles/components/mobile';

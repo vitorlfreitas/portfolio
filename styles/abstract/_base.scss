@@ -1,0 +1,24 @@
+@import './variable';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+a,
+li {
+    text-decoration: none;
+    list-style: none;
+    color: $color1;
+}
+html, body {
+    font-family: $font-secundaria;
+    background-color: $background;
+    color: $color1;
+    font-size: $text-size;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}

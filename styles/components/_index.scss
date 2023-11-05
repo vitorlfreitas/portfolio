@@ -1,0 +1,100 @@
+@import '../abstract/variable';
+
+body {
+
+    header {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 6%;
+
+        figure {
+            img {
+                margin-top: 5px;
+                height: 60px;
+            }
+        }
+
+        nav {
+            ul {
+                display: flex;
+                gap: 4vw;
+
+                li a {
+                    font-size: $text-size * 1.8;
+                }
+
+                li a:hover {
+                    transition-duration: 0.4s;
+                    color: $color2;
+                }
+            }
+        }
+    }
+
+    main {
+        height: 90vh;
+        padding: 0 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+
+        .profile {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            h1 {
+                font-family: $font-principal;
+                font-size: $text-size * 2.2;
+                word-spacing: 0.4rem;
+                strong {
+                    color: $color2;
+                }
+            }
+
+            p {
+                font-size: $text-size * 1.6;
+                font-weight: 400;
+                font-style: normal;
+                text-align: justify;
+
+            }
+
+            .buttons {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10%;
+
+                a {
+                    text-align: center;
+                    background: $color2;
+                    color: $color3;
+                    font-size: $text-size * 1.5;
+                    font-weight: 600;
+                    width: 30%;
+                    padding: 10px;
+                    border-radius: 16px;
+                }
+                a:hover {
+                    transform: scale(1.05, 1.05);
+                    transition-duration: 0.125s;
+                }
+            }
+        }
+
+        figure {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 420px;
+            }
+        }
+    }
+}
