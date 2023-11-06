@@ -14,12 +14,15 @@
 
 @media all and (max-width: 620px) {
     body {
+        header {
+            margin-bottom: 15px;
+        }
         main {
             flex-direction: column;
+            justify-content: flex-start;
             gap: 20px;
-            height: fit-content;
             padding: 0px 10px 30px 10px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
 
             .profile {
                 width: 90vw;
@@ -47,7 +50,7 @@
     body {
         header {
             figure img {
-                height: 35px;
+                height: 30px;
             }
 
             nav ul li a {
@@ -71,9 +74,10 @@
     }
 }
 
-@media all and (max-width: 330px) {
+@media all and (max-width: 350px) {
     body {
         header {
+            flex-direction: column;
             padding: 10px 3%;
 
             figure img {
@@ -109,11 +113,10 @@
     }
 }
 
-@media all and (max-width: 285px) {
+@media all and (max-width: 315px) {
     body {
         header {
-            flex-direction: column;
-            margin-bottom: 20px;
+            margin-bottom: 0px;
             nav ul {
                 gap: 6vw;
             }

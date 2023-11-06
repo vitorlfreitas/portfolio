@@ -18,9 +18,6 @@ html, body {
   background-color: #000;
   color: #f6f6f6;
   font-size: 1rem;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
 }
 
 @media all and (min-width: 1500px) {
@@ -49,7 +46,6 @@ html, body {
   }
 }
 body header {
-  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -218,12 +214,15 @@ body main figure img {
   }
 }
 @media all and (max-width: 620px) {
+  body header {
+    margin-bottom: 15px;
+  }
   body main {
     flex-direction: column;
+    justify-content: flex-start;
     gap: 20px;
-    height: -moz-fit-content;
-    height: fit-content;
     padding: 0px 10px 30px 10px;
+    margin-bottom: 30px;
   }
   body main .profile {
     width: 90vw;
@@ -242,7 +241,7 @@ body main figure img {
 }
 @media all and (max-width: 430px) {
   body header figure img {
-    height: 35px;
+    height: 30px;
   }
   body header nav ul li a {
     font-size: 1rem;
@@ -254,8 +253,9 @@ body main figure img {
     width: 260px;
   }
 }
-@media all and (max-width: 330px) {
+@media all and (max-width: 350px) {
   body header {
+    flex-direction: column;
     padding: 10px 3%;
   }
   body header figure img {
@@ -277,10 +277,9 @@ body main figure img {
     width: 220px;
   }
 }
-@media all and (max-width: 285px) {
+@media all and (max-width: 315px) {
   body header {
-    flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
   body header nav ul {
     gap: 6vw;
